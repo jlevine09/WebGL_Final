@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fidgetSpinner</title>
+    <style rel="stylesheet" type="text/css">
+	
+		html,body{
+	
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10;
+			padding: 10;
+			overflow: hidden;
+	
+		}
+			.spinner{
+			width: 720px;
+			height: 720px;
+			background: url(./spinner.png) no-repeat;
+		}
+		
+		
+	</style>
+	
+</head>
+<body>
+	<div class="spinner" id="spinner"></div>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="Spin.js"></script>
+	<script> 
+		$("#spinner").propeller({
+		inertia: .98
+		
+		});
+		</script>
+</body>
+</html>
+
+	
